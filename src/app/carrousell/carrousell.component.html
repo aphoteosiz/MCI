@@ -1,0 +1,12 @@
+<div class="carousel-container">
+  <div class="carousel-track">
+    <div class="card" *ngFor="let card of cards">
+      <div class="card-content">
+        <img [src]="card.imageURL" alt="Card image" class="custom-image">
+        <h3>{{ card.title }}</h3>
+        <h5>{{ card.subtitle }}</h5>
+        <p>{{ card.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

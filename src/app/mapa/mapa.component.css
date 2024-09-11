@@ -1,0 +1,8 @@
+#map {
+  height: 500px; /* Asegura que el mapa tenga un tamaño definido */
+  width: 100%;
+  position: relative;
+  z-index: 1; /* Asegura que no se sobreponga sobre otros elementos */
+  margin: 20px auto; /* Centramos el mapa en la página */
+  border-radius: 15px; /* Añade bordes redondeados para un mejor diseño */
+}

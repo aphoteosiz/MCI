@@ -1,0 +1,84 @@
+<div class="container-fluid">
+
+  <img src="/assets/images/servicios.png" alt="services" class="img-services">
+</div>
+<div class="video-container">
+<video autoplay muted loop class="video-background">
+  <source src="assets/videos/videoMC.mp4" type="video/mp4">
+</video>
+</div>
+<br><br>
+<br>
+<br>
+<hr>
+<div class="content">
+<div class="card-container" (click)="toggleFlip()">
+  <div class="card" [class.flipped]="isFlipped">
+    <div class="card-front">
+      <i class="bi bi-graph-up-arrow custom-icon"></i>
+      <h3><B>FOCUSED ON PROBLEM SOLVING</B></h3>
+      <h5>Local, fast & flexible support for urgent requests from our clients</h5>
+    </div>
+    <div class="card-back">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui enim, magnam excepturi dolore minus accusantium! Hic, fugit non vitae eveniet sed quod ex, maiores beatae possimus dignissimos aliquid vero!</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-container" (click)="toggleFlip1()">
+  <div class="card" [class.flipped]="isFlipped1">
+    <div class="card-front">
+      <i class="bi bi-calendar-check custom-icon"></i>
+      <h3><b> CUSTOMER SUPPORT 365 DAYS A YEAR </b></h3>
+      <h5>Total availability to care the Requests of Our Clients at any time</h5>
+    </div>
+    <div class="card-back">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui enim, magnam excepturi dolore minus accusantium! Hic, fugit non vitae eveniet sed quod ex, maiores beatae possimus dignissimos aliquid vero!</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-container" (click)="toggleFlip2()">
+  <div class="card" [class.flipped]="isFlipped2">
+    <div class="card-front">
+      <i class="bi bi-check-circle custom-icon"></i>
+      <H3><B>SUPPORT & MAINTENANCE</B></H3>
+      <h5>Service Management through our Online Digital Platform.</h5>
+    </div>
+    <div class="card-back">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui enim, magnam excepturi dolore minus accusantium! Hic, fugit non vitae eveniet sed quod ex, maiores beatae possimus dignissimos aliquid vero!</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-container" (click)="toggleFlip3()">
+  <div class="card" [class.flipped]="isFlipped3">
+    <div class="card-front">
+      <i class="bi bi-cursor custom-icon"></i>
+      <H3><B>MACHINECARE TEAM GEOGRAPHIC & LOCATION</B></H3>
+      <h5>Service Management through our Online Digital Platform.</h5>
+    </div>
+    <div class="card-back">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui enim, magnam excepturi dolore minus accusantium! Hic, fugit non vitae eveniet sed quod ex, maiores beatae possimus dignissimos aliquid vero!</p>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<hr>
+
+<div class="container-fluid">
+
+  <img src="assets/images/MCSECC.jpg" alt="services" class="img-secc">
+</div>
+<br>
+<hr>
+<app-carrousell></app-carrousell>
+<br>
+<hr>
+<app-headline></app-headline>
+<br>
+<hr>
+<app-partnets></app-partnets>
+<br>
+<hr>

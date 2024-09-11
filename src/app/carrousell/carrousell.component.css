@@ -1,0 +1,49 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px; /* Ajusta el alto según tus necesidades */
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content; /* Esto asegura que el contenedor sea del tamaño de su contenido */
+  animation: slide 30s linear infinite; /* Duración de la animación */
+}
+
+.card {
+  min-width: 300px; /* Ancho mínimo para cada tarjeta */
+  height: 300px; /* Alto fijo para las tarjetas */
+  margin: 10px;
+  flex-shrink: 0;
+  background-color: #61ace1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-image {
+  width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px; /* Esto es opcional si quieres hacer la imagen circular */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Mueve las tarjetas fuera de la pantalla */
+  }
+}

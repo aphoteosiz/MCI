@@ -1,0 +1,21 @@
+<div class="animated-headline-container">
+  <h4 class="animated-headline">
+    <span class="plain-text">OUR </span>
+    <span class="dynamic-text">PARTNERSHIPS</span>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
+    </svg>
+  </h4>
+</div>
+
+
+<div class="carousel-container">
+  <div class="carousel-track">
+    <div class="card" *ngFor="let card of cards">
+      <div class="card-content">
+        <img [src]="card.imageURL" alt="Card image" class="custom-image">
+
+      </div>
+    </div>
+  </div>
+</div>

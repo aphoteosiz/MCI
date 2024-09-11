@@ -1,0 +1,109 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.animated-headline-container {
+  text-align: center;
+  margin: 50px 0;
+  position: relative;
+}
+
+.animated-headline {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0d07a7;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.animated-headline svg {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 90px;
+  fill: none;
+  stroke: #071e7e;
+  stroke-width: 5;
+}
+
+.plain-text {
+  color: #000;
+}
+
+.dynamic-text {
+  color: #2600ff;
+  position: relative;
+  display: inline-block;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para info-boxes */
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.info-box {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  width: 100%;
+}
+
+.info-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h2 {
+  font-size: 2.5rem;
+  color: #084390;
+  margin: 0 0 10px;
+}
+
+.info-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .animated-headline {
+    font-size: 2.5rem;
+  }
+
+  .info-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    max-width: 100%;
+  }
+}
